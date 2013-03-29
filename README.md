@@ -30,8 +30,8 @@ ___________
 
 ***
 
-  gcc -g -Wall -W -DHAVE_CONFIG_H -I/home/louis/prog/cwiid/src/cwiid-0.6.00/common/include -I../../../wminput -I../../../libcwiid -fpic   -c -o ir_rel.o ir_rel.c
-  gcc -shared   -o ir_rel.so ir_rel.o
+      gcc -g -Wall -W -DHAVE_CONFIG_H -I/home/louis/prog/cwiid/src/cwiid-0.6.00/common/include -I../../../wminput -I../../../libcwiid -fpic   -c -o ir_rel.o ir_rel.c
+      gcc -shared   -o ir_rel.so ir_rel.o
 
 ***
 
@@ -39,8 +39,8 @@ ___________
 
 ***
 
-  mkdir -p ~/.cwiid/plugins
-  cp -p ir_rel.so ~/.cwiid/plugins/
+    mkdir -p ~/.cwiid/plugins
+    cp -p ir_rel.so ~/.cwiid/plugins/
 
 ***
 
@@ -48,7 +48,7 @@ ___________
 
 ***
 
-  cp -p ir_rel.so /usr/local/lib/cwiid/plugins
+    cp -p ir_rel.so /usr/local/lib/cwiid/plugins
 
 ***
 
@@ -56,7 +56,7 @@ ___________
 
 ***
 
-  cp -p ir_rel.so /usr/lib/cwiid/plugins
+      cp -p ir_rel.so /usr/lib/cwiid/plugins
 
 ***
 
@@ -67,7 +67,7 @@ In a wminput config file, use those lines:
 
 ***
 
-  Plugin.ir_rel.X = REL_X
-  Plugin.ir_rel.Y = REL_Y
+      Plugin.ir_rel.X = REL_X
+      Plugin.ir_rel.Y = REL_Y
 
 ***
