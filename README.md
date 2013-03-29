@@ -30,7 +30,7 @@ ___________
 
 ***
 
-      gcc -g -Wall -W -DHAVE_CONFIG_H -I/home/louis/prog/cwiid/src/cwiid-0.6.00/common/include -I../../../wminput -I../../../libcwiid -fpic   -c -o ir_rel.o ir_rel.c
+      gcc -g -Wall -W -DHAVE_CONFIG_H -I../../../common/include -I../../../wminput -I../../../libcwiid -fpic   -c -o ir_rel.o ir_rel.c
       gcc -shared   -o ir_rel.so ir_rel.o
 
 ***
