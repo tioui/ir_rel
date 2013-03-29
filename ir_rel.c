@@ -22,8 +22,8 @@
 #define MAX_AXES_VALUE 32
 #define MIN_AXES_VALUE -32
 
-#define X_VAL_MULTIPLIER -2
-#define Y_VAL_MULTIPLIER 2
+#define X_VAL_MULTIPLIER -1
+#define Y_VAL_MULTIPLIER 1
 
 cwiid_wiimote_t *wiimote;
 
@@ -114,7 +114,7 @@ struct wmplugin_data *wmplugin_exec(int mesg_count, union cwiid_mesg mesg[])
 	if(diff_count!=0){
 		x_val=(diff_x_avg*X_VAL_MULTIPLIER)/diff_count;
 		y_val=(diff_y_avg*Y_VAL_MULTIPLIER)/diff_count;
-		printf("Value: (%d,%d).\n",x_val,y_val);
+		// printf("Value: (%d,%d).\n",x_val,y_val);
 
 		if(x_val>MAX_AXES_VALUE){
 			x_val=MAX_AXES_VALUE;
